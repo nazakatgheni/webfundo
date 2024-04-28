@@ -1,0 +1,154 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the main container or wrapper */
+.wrapper {
+    background-color: #E31756;
+    flex: 1;
+}
+
+/* Styling for the first and second rows */
+.row1,
+.row2 {
+    display: flex;
+    width: 100%;
+    color: black;
+}
+
+/* Styling for the top right and top left sections */
+.topRight,
+.topLeft {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the top right section */
+.topLeft {
+    width: 45%;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling for the top left section */
+.topRight {
+    width: 60%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.topRight a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling for the bottom left, bottom middle, and bottom right sections */
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.bottom-middle input:placeholder-shown {
+    /* use placeholder-shown to hold the text in input text type */
+}
+
+/* Styling for elements with class 'pick-pet' and 'zip-code' */
+.pick-pet,
+.zip-code {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-right {
+    display: flex;
+    =justify-content: center;
+}
+
+.bottom-right label {
+    border: 2px solid black;
+    color: aliceblue;
+    background-color: #9900ff;
+    box-shadow: 2px 2px 4px black;
+    margin: 0 auto;
+}
+
+/* main  */
+
+
+.main {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.row-main {
+    background-color: #FC7992;
+    /* border: 2px solid green; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #E31756;
+    /* height: 100%; */
+
+}
+
+h3 {
+    color: black;
+}
+
+#column1,
+#column2,
+#column3 {
+    /* border: 2px solid black; */
+    margin: 5px;
+    padding: 5px;
+}
+
+#column1 {
+    width: 12.5%;
+}
+
+#column2 {
+    width: 37.5%;
+    padding-top: 17px;
+}
+
+#column3 {
+    width: 25%;
+    padding-top: 30px;
+    text-align: right;
+}
+
+#column3 span {
+    padding-right: 5px;
+}
+
+#checkbox {
+    /* margin-right: 15px; */
+    width: 80px;
+    height: 80px;
+}
+
+.row-main.input {
+    height: 70px;
+}
+
+button {
+    width: 120px;
+    height: 20px;
+    box-shadow: 2px 2px 4px #fca31d;
+    background-color: #f6990e;
+    color: white;
+    border: none;
+}

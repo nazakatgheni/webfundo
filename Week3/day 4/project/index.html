@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="row1">
+                <div class="topLeft">
+                    <img src="images/heart-light.png" alt="heart-light">
+                    <h1>Pet Shelter</h1>
+                </div>
+                <div class="topRight">
+                    <a href="#">Find a Pet</a>
+                    <a href="#">About</a>
+                    <button id="disappear" onclick="disappearDonateBtn()">Donate</button>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="bottom-left">
+                    <h3>I'm looking for a...</h3>
+                    <div class="pick-pet">
+                        <img src="images/paw-light.png" alt="paw-image">
+                        <div id="button">
+                            <select name="animalType" placeholder="Choose your pet" onchange="chooseAlert()"
+                                id="animalDropdown">
+                                <option value="" disabled selected>Choose your Pet</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="rabbit">Rabbit</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom-middle">
+                    <h3>In order near me...</h3>
+                    <div class="zip-code">
+                        <img src="images/pin-light.png" alt="pin-light">
+                        <input type="text" placeholder="Enter City or Zip Code" id="zipcode">
+                    </div>
+                </div>
+
+                <div class="bottom-right">
+                    <label for="shadow-box">Find your new best friend</label>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="2">
+        <main>
+            <div class="row-main" id="row-1">
+                <div id="column1">
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div id="column2">
+                    <h1>Pepper</h1>
+                    <p>Pepper is really cute and u will love it!</p>
+                </div>
+                <div id="column3">
+                    <div><span id="petIncrease1">0</span>petting(s)</div>
+                    <button onclick="increaseNumber(1)">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="row-main" id="row-2">
+                <div id="column1">
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div id="column2">
+                    <h1>Bruce</h1>
+                    <p>Bruce is really cute and u will love it!</p>
+                </div>
+                <div id="column3">
+                    <div><span id="petIncrease2">0</span>petting(s)</div>
+                    <button onclick="increaseNumber(2)">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="row-main" id="row-3">
+                <div id="column1">
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div id="column2">
+                    <h1>Oscar</h1>
+                    <p>Oscar is really cute and u will love it!</p>
+                </div>
+                <div id="column3">
+                    <div><span id="petIncrease3">0</span>petting(s)</div>
+                    <button onclick="increaseNumber(3)">Pet Oscar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

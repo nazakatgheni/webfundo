@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #131921;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: aliceblue;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.nav-mid{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input{
+    width: 75%;
+}
+
+.main-logo{
+    width: 100px;
+}
+
+main{
+    margin: o auto;
+    width: 75%;
+}
+
+.blue-shoes-img{
+    width: 100%;
+}
